@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Oyeniyi Tolulpe John">
+    <title>Payment page</title>
+    <link rel="stylesheet" href="css/homesecond.css">
+
+    <!-- box icon -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" href="img/werloplogo.png">
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Scroll top -->
+   <a href="#home" class="backto-top">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+  
+    <!-- header -->
+  <header>
+    <div class="container">
+     
+     <div class="header">
+     <div class="headerlogo"> <a href="index.html"><img src="img/werlop1.png" alt="WERLOP"></a></div>
+
+    <nav>
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="about.html">About</a></li>
+     </ul>
+    </nav>
+      <span class="open-slide" onclick="openSlideMenu()">
+        <i class='bx bx-menu'></i>
+      </span>
+ </div>
+    </div>
+ </header>
+
+      
+       <!-- sidebar -->
+  <section id="side-menu" class="side-nav">
+    <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
+
+    <div class="sidemenu-logo">
+      <a href="index.html"><img src="img/werloplogo.png" alt="Werlop"></a>
+      <h4>Only Good Stuff</h4>
+    </div>
+
+   <div class="selectIon">
+    <a href="index.html">home</a>
+    <a href="contact.html">contact</a>
+    <a href="about.html">about</a>
+   </div>
+
+   <div class="skillsidebar">
+    <p>It is neither wealth nor splendor, but the very fact
+       of knowing that christ live on the inside of you is what gives you happness.
+    </p>
+
+    <div class="skillsidebarimg">
+      <img src="img/tolu2.png" alt="T.J. Oyeniyi">
+      <div>
+        <span class="span">T.J. Oyeniyi</span><br>
+        <span>Expert Front-End Developer</span>
+      </div>
+    </div>
+   </div>
+  </section>
+       
+
+ <div class="paymentsection" id="home">
+    <div class="container">
+
+    </div>
+  </div>
+
+
+
+
+
+
+  
+
+
+    <section>
+    <div class="container">
+        
+                <div class="form-container">
+                    <div class="left-content" data-aos="fade-right">
+                        <h3 class="title">it's werlop only</h3>
+                        <p class="sub-title">we only build good stuff</p>
+                    </div>
+                    <div class="right-content" data-aos="fade-left">
+                        <h3 class="form-title">payment</h3>
+                       
+                        <form class="thisisform" id="paymentForm">
+                          <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email-address" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="tel" id="amount" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" />
+                          </div>
+                          <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" />
+                          </div>
+                          <div class="form-submit">
+                            <button type="submit" class="btn signin" onclick="payWithPaystack()"> Pay </button>
+                          </div>
+                        </form>
+
+                    </div>
+                </div>
+           
+    </div>
+    </section>
+  
+    
+
+
+
+    
+
+
+
+
+
+
+     <!-- footer -->
+  <footer>
+
+    <div class="quicklink-footer">
+
+    <div class="container">
+      <div class="quicklink" data-aos="zoom-out-up">
+        
+        <div>
+          <!-- <h3>Quick Link</h3> -->
+          <ol class="footerlinkover">
+            <li class="quicklink-topic">Quick Link</li>
+            <li><i class='bx bx-chevron-right'></i> <a href="index.html">Home</a></li>
+            <li><i class='bx bx-chevron-right'></i> <a href="contact.html">Contact</a></li>
+            <li><i class='bx bx-chevron-right'></i> <a href="about.html">About</a></li>
+          </ol>
+        </div>
+
+        <div>
+          <!-- <h3>Services</h3> -->
+          <ol>
+            <li class="quicklink-topic">Services</li>
+            <li>Web Designer</li>
+            <li>Web Developer</li>
+            <li>Consultancy</li>
+          </ol>
+        </div>
+
+        <div>
+          <!-- <h3>Find me</h3> -->
+          <ol class="footerlinkover">
+            <li class="quicklink-topic">Find me</li>
+            <li><i class='bx bx-chevron-right'></i> <a href="#">What's App</a></li>
+            <li><i class='bx bx-chevron-right'></i> <a href="#">Telegram</a></li>
+            <li><i class='bx bx-chevron-right'></i> <a href="#">Linkedin</a></li>
+            <li><i class='bx bx-chevron-right'></i> <a href="#">Facebook</a></li>
+          </ol>
+        </div>
+
+        <div class="werlopfooter">
+          <img src="img/werlop1.png" alt="Werlop">
+          <p>Only good stuff</p>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <p>Werlop 2023 &copy; copyright</p>
+        <div>
+          <ol>
+            <li><a href="https://wa.me/message/YGX55AQXXSWRB1" target="_blank"><i class="bx bxl-whatsapp-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="bx bxl-telegram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="bx bxl-linkedin-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  </footer>
+
+  <script src="js/payment.js"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: true,
+    });
+  </script>
+  
+    
+</body>
+</html>
