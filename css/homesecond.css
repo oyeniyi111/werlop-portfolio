@@ -2206,7 +2206,16 @@ footer{
   
   /* payment */
   .paymentsection{
-    margin-top: 150px;
+    margin-top: 100px;
+  }
+
+  .original-payment-section{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .form-container{
@@ -2337,6 +2346,16 @@ footer{
   }
   
   @media only screen and (max-width: 767px){
+
+    .original-payment-section{
+      height: 100%;
+    }
+
+    .form-container{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
     .btn{ margin-bottom: 30px; }
   }
   
@@ -2348,6 +2367,18 @@ footer{
     }
     .form-container .left-content .title{ margin: 0 0 20px; }
     .form-container .left-content .sub-title{ font-size: 40px; }
+  }
+
+  @media only screen and (max-width:323px){
+    .form-container .right-content .form-title{
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width:279px){
+    .form-container .right-content .form-title{
+      font-size: 25px;
+    }
   }
 
 
