@@ -1915,6 +1915,58 @@ ion-icon{
 
 
 
+.whyme .me-me{
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  background: #1e2631;
+  /* border-color:  rgb(141, 36, 36); */
+  border-color:  #bef049;
+  animation: box 3s infinite;
+}
+
+
+.whyme .me-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.whyme .me-me:hover::before {
+  background-color: #020b18;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.whyme .me-me:hover .bx{
+  background-color: #ff8b00;
+  border: 1px solid #ff8b00;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@keyframes move{
+  0%{ transform: translateX(0); }
+  50%{ transform: translateX(5px); }
+  100%{ transform: translateX(0); }
+}
+@keyframes box{
+  0%{ box-shadow: none; }
+  50%{ box-shadow: 0 0 20px #fdba04; }
+  100%{ box-shadow: none; }
+}
+
+
+
+
 @media screen and (max-width: 1202px){
   .whyme .me{
     font-size: small;
@@ -1990,7 +2042,7 @@ ion-icon{
   }
   
    80%{
-      content: "Unlimited project revision";
+      content: "Effective project revision";
   }
   
    100%{
@@ -2706,7 +2758,8 @@ ion-icon{
 .newslettercontent span{
   color: #0b1421;
   background-color: #93e923;
-  padding: 20px;
+  border-radius: 30px;
+  padding: 15px;
   text-transform: uppercase;
   transition: all 0.5s ease;
 }
@@ -2714,7 +2767,6 @@ ion-icon{
 .newslettercontent span:hover{
   cursor: pointer;
   color: #fff;
-  border-radius: 30px;
   background: transparent;
   border: 1px solid #93e923;
   letter-spacing: 1px;
