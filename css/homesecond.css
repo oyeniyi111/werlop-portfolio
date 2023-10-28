@@ -252,14 +252,16 @@ ion-icon{
 }
 
 .skillsidebarimg{
-  display: flex;
-  gap: 6px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   font-size: smaller;
-  border: 1px solid #ff8b00;
+  border-right: 2px solid #fdba04;
   color: #fff;
-  padding: 2px;
   border-radius: 25px;
 }
+
 
 
 
