@@ -966,8 +966,6 @@ footer{
 
 /* email-signature */
   .email-signature{
-    max-width: 750px;
-    width: 100%;
     margin: auto;
     margin-bottom: 3rem;
     background: #fff;
