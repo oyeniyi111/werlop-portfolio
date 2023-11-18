@@ -2200,6 +2200,7 @@ footer{
      
     .idcard-border-anim{
       margin-top: 2rem;
+       margin-bottom: 15rem;
      }
 
      .border-anim{
@@ -2289,7 +2290,19 @@ footer{
    }
 
 
+   @media screen and (max-width: 890px){
+    .idcard-border-anim{
+      margin-top: 3rem;
+     }
+
+   }
+
+
    @media screen and (max-width: 596px){
+    .idcard-border-anim{
+      margin-bottom: 6rem;
+     }
+
     .border-anim{
       float: none;
     }
