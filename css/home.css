@@ -55,6 +55,50 @@
 
 
 
+
+/* Animation */
+@keyframes slideInFromLeft{
+  0%{
+      transform: translateX(-100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight{
+  0%{
+      transform: translateX(100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop{
+  0%{
+      transform: translateY(-100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom{
+  0%{
+      transform: translateY(50%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+
+
 body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     /* background-color: rgba(27, 47, 69, 0.7); */
@@ -293,6 +337,7 @@ ion-icon{
 
 /* home */
 .homecontent{
+  animation: slideInFromBottom 1s ease-in;
   margin-top: 170px;
   z-index: 5;
 }
