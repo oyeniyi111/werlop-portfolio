@@ -607,9 +607,126 @@ ion-icon{
 
 
 
+
+
+
+
+
+
+.freelancelink{
+  display: inline-block;
+  padding: 5px 15px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  color: #5bc908;
+  text-transform: capitalize;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  margin-top: 10px;
+  animation: frr 3s infinite;
+}
+
+.up{
+  color: #93e923;
+}
+
+
+.freelancelink:hover{ color: #fff; }
+.freelancelink:before,
+.freelancelink:after{
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #030913;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transform: rotate3d(-1,1,0,100deg);
+  transform-origin: 0 0;
+  transition: all 0.3s ease 0s;
+}
+.freelancelink:after{
+  left: 50%;
+  transform-origin: 100% 100%;
+}
+.freelancelink:hover:before,
+.freelancelink:hover:after{
+  opacity: 1;
+  transform: rotate3d(0,0,0,0);
+}
+
+@keyframes move{
+  0%{ transform: translateX(0); }
+  50%{ transform: translateX(5px); }
+  100%{ transform: translateX(0); }
+}
+@keyframes frr{
+  0%{ box-shadow: none; }
+  50%{ box-shadow: 0 0 7px #dfb078; }
+  100%{ box-shadow: none; }
+}
+
+
+
 @media screen and (max-width: 856px){
   .text{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 465px){
+  .werloplink,
+  .freelancelink{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 377px){
+  .textcontact a{
+    margin-right: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 349px){
+  .werloplink,
+  .freelancelink{
+    padding: 5px 10px;
+  }
+
+  .textcontact a{
+    margin-right: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 298px){
+  .werloplink,
+  .freelancelink{
+    padding: 5px 8px;
+  }
+
+  .textcontact a{
+    margin-right: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 274px){
+  .werloplink,
+  .freelancelink{
+    font-size: xx-small;
+  }
+}
+
+@media screen and (max-width: 261px){
+  .werloplink,
+  .freelancelink{
+    font-size: 8px;
   }
 }
 
@@ -1902,6 +2019,10 @@ ion-icon{
 .accordion .tab .content a{
  color: #ff8b00;
 }
+
+.accordion .tab .content a:hover{
+  color: #93e923;
+ }
 
 .accordion .tab input:checked ~ .content{
   max-height: 100vh;
