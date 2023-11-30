@@ -1303,9 +1303,9 @@ footer{
   }
 
   .freelance{
-    font-size: 14px;
+    font-size: 12px;
     padding: 4px;
-    width: 80px;
+    width: 60px;
     margin: 5px;
 }
 
@@ -1335,13 +1335,6 @@ footer{
   .freelancer-grid{
     grid-template-columns: 220px 230px;
   }
-
-  .freelance{
-    font-size: 12px;
-    padding: 4px;
-    width: 60px;
-    margin: 5px;
-}
 }
 
 
@@ -1520,6 +1513,7 @@ footer{
    width: 100%;
   }
 }
+
 
 
   
