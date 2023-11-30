@@ -1103,6 +1103,15 @@ footer{
     margin-bottom: 16px;
   }
 
+.freelance-intro a{
+    color: #5bc908;
+    font-weight: bold;
+  }
+
+  .freelance-intro a:hover{
+    color: #fdba04;
+  }
+
   .freelance{
     font-family: 'Ubuntu', sans-serif;
     background-color: #fff;
