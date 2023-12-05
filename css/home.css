@@ -565,6 +565,10 @@ ion-icon{
   border-top: 1px solid #5bc908;
 }
 
+.textcontact a{
+  margin-right: 20px;
+}
+
 
 .werloplink{
   display: inline-block;
