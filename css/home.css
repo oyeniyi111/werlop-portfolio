@@ -2262,7 +2262,7 @@ ion-icon{
     grid-row: span 1;
   }
 
-  .whyme .me:nth-child(8){
+  .whyme .Summary:nth-child(8){
     grid-column: span 2;
     grid-row: span 1;
   }
@@ -2278,7 +2278,32 @@ ion-icon{
     grid-column: unset !important;
     grid-row:  unset !important;
   }
+
+  .whyme .Summary:nth-child(8){
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
 }
+
+
+@media screen and (max-width: 448px){
+  .whyme .Summary{
+     font-size: small;
+  }
+}
+
+@media screen and (max-width: 406px){
+  .whyme .Summary{
+     font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 394px){
+  .whyme .Summary{
+     font-size: x-small;
+  }
+}
+
 
 
 
