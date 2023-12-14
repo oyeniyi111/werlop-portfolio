@@ -11,6 +11,9 @@
     
 
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <link rel="icon" href="img/werloplogo.png">
     
 
@@ -131,6 +134,44 @@
         </div>
        </div>
       </section>
+
+
+
+
+     <!-- Alert section -->
+      <div class="modal__overlay">
+        <div class="modal__window">
+            <div class="modal__titlebar">
+                <span class="modal__title">December Offer <span class="d-span">${modalOptions.title}</span></span>
+                <button class="modal__close material-icons">close</button>
+            </div>
+            <div class="modal__content modal_grid">
+                <img src="img/adss.png" alt="" srcset="">
+                <div class="modal_content_home">
+                    <p class="first_sentence">Unlock your online presence: own your own website today!</p>
+                    <div class="alert-effect">
+                        <span>Up to</span>
+                        <span class="span">5</span><span class="span">0</span><span class="span">%</span>
+                        <span class="span">O</span><span class="span">f</span><span class="span">f</span>
+                    </div>
+                    <div class="modal_price">
+                        <p>1 page <span><b>$ 30</b></span> <span class="strike-th"><b>$ 60</b></span></p>
+                        <p>4 pages <span><b>$ 75</b></span> <span class="strike-th"><b>$ 150</b></span></p>
+                        <p>10 pages <span><b>$ 130</b></span> <span class="strike-th"><b>$ 260</b></span></p>
+                    </div>
+                    
+                    <p><a href="contact.html">contact</a></p>
+                </div>
+                <span class="e-span">${modalOptions.content}</span>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
      
 <!-- data-aos="fade-right" -->
 <!-- data-aos="fade-left" -->
@@ -1008,6 +1049,8 @@
 
    <!-- mixitup js -->
    <script src="js/mixitup.min.js"></script>
+
+    <script src="js/alert.js"></script>
 
   <script src="js/home.js"></script>
 
