@@ -372,6 +372,365 @@
     .textsection-text-paragraph{
       color: #fdba04;
     }
+
+
+
+
+
+
+
+ /* ads section */
+    .ads-home{
+      max-width: 750px;
+      margin: auto;
+      width: 100%;
+      height: 200px;
+      background-color: #2C3137;
+      overflow: hidden;
+      display: flex;
+      border-radius: 7px;
+      margin-top: 2rem;
+    }
+
+    .ads-pic{
+      background-color: #ff8b00;
+      width: 360px;
+      clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
+      z-index: 1;
+    }
+
+    
+    .ads-pic img{
+      width: 230px;
+    }
+
+    .ads-content{
+      text-align: end;
+      background-color: #2C3137;
+      padding: 5px;
+      position: relative;
+      width: 450px;
+    }
+
+    .ads-content p{
+      font-size: 20px;
+      font-weight: bold;
+      color: #00bb7e;
+      text-transform: capitalize;
+      position: absolute;
+      width: 500px;
+      right: 5px;
+      top: 30px;
+
+    }
+
+
+
+    .ads-effect{
+      color: #ccc;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      animation: 1.5s toggleSize linear infinite;
+      margin-top: 5rem;
+  }
+  @keyframes toggleSize{
+      0%, 100%{ transform:  scale(0.5); }
+      50%, 70%{
+          color: #fff;
+          transform:  scale(1.5);
+      }
+  }
+  
+  
+
+
+  @media only screen and (max-width: 927px){
+    .ads-content p{
+      font-size: 18px;
+      width: 495px;
+
+    }
+  }
+
+  @media only screen and (max-width: 875px){
+    .ads-home{
+      height: 195px;
+    }
+
+    .ads-pic img{
+      width: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 833px){
+    .ads-home{
+      height: 175px;
+    }
+
+
+    .ads-pic img{
+      width: 200px;
+    }
+
+    .ads-content p{
+      font-size: 16px;
+      width: 490px;
+    }
+
+    .ads-effect{
+      font-size: 30px;
+  }
+  }
+
+
+  @media only screen and (max-width: 757px){
+    .ads-home{
+      height: 167px;
+    }
+
+
+    .ads-pic img{
+      width: 190px;
+    }
+
+    .ads-content p{
+      font-size: 15px;
+    }
+  }
+
+
+  @media only screen and (max-width: 725px){
+    .ads-home{
+      height: 163px;
+    }
+
+
+    .ads-pic img{
+      width: 185px;
+    }
+
+    .ads-content p{
+      font-size: 14px;
+      width: 490px;
+    }
+  }
+
+  @media only screen and (max-width: 695px){
+    .ads-home{
+      height: 158px;
+    }
+
+    .ads-pic img{
+      width: 180px;
+    }
+
+    .ads-effect{
+      font-size: 25px;
+  }
+  }
+
+  @media only screen and (max-width: 673px){
+    .ads-home{
+      height: 150px;
+    }
+
+    .ads-pic img{
+      width: 170px;
+    }
+
+    .ads-content p{
+      font-size: 13px;
+      width: 490px;
+      top: 25px;
+
+    }
+
+    .ads-effect{
+      margin-top: 4rem;
+  }
+  }
+
+
+  @media only screen and (max-width:645px){
+    .ads-home{
+      height: 140px;
+    }
+
+    .ads-pic img{
+      width: 160px;
+    }
+  }
+
+  @media only screen and (max-width:607px){
+    .ads-home{
+      height: 133px;
+    }
+
+    .ads-pic img{
+      width: 150px;
+    }
+
+    .ads-content p{
+      font-size: 12px;
+      width: 490px;
+      top: 20px;
+
+    }
+
+    .ads-effect{
+      font-size: 25px;
+      margin-top: 3rem;
+  }
+  }
+
+  @media only screen and (max-width:573px){
+    .ads-home{
+      height: 124px;
+    }
+
+    .ads-pic img{
+      width: 140px;
+    }
+  }
+
+
+  @media only screen and (max-width:545px){
+    .ads-home{
+      height: 115px;
+    }
+
+    .ads-pic img{
+      width: 130px;
+    }
+
+    .ads-content p{
+      width: 260px;
+
+    }
+
+    .ads-effect{
+      margin-top: 4rem;
+  }
+  }
+
+  @media only screen and (max-width:493px){
+    .ads-home{
+      height: 105px;
+    }
+
+    .ads-pic img{
+      width: 120px;
+    }
+
+    .ads-content p{
+      font-size: 12px;
+      width: 255px;
+      top: 15px;
+
+    }
+
+    .ads-effect{
+      font-size: 20px;
+  }
+  }
+
+  @media only screen and (max-width:457px){
+    .ads-home{
+      height: 90px;
+    }
+
+    .ads-pic img{
+      width: 110px;
+    }
+
+    .ads-content p{
+      font-size: 12px;
+      width: 235px;
+      top: 15px;
+
+    }
+
+    .ads-effect{
+      font-size: 15px;
+      margin-top: 3rem;
+  }
+  }
+
+  @media only screen and (max-width:423px){
+    .ads-home{
+      height: 80px;
+    }
+
+    .ads-pic img{
+      width: 95px;
+    }
+
+    .ads-content p{
+      font-size: 12px;
+      width: 180px;
+      top: 5px;
+
+    }
+  }
+
+
+  @media only screen and (max-width:345px){
+    .ads-home{
+      height: 70px;
+    }
+
+    .ads-pic img{
+      width: 80px;
+    }
+
+    .ads-content p{
+      font-size: 11px;
+      top: 8px;
+
+    }
+
+    .ads-effect{
+      font-size: 15px;
+      margin-top: 2.5rem;
+  }
+  }
+
+
+  @media only screen and (max-width:305px){
+    .ads-home{
+      height: 60px;
+    }
+
+    .ads-pic img{
+      width: 70px;
+    }
+
+    .ads-content p{
+      font-size: 10px;
+      top: 5px;
+
+    }
+
+    .ads-effect{
+      font-size: 15px;
+      margin-top: 2.1rem;
+  }
+  }
+
+  
+
+  @media only screen and (max-width:278px){
+    .ads-home{
+      display: none;
+    }
+
+  }
+
+
+
+
+
     
     
     
@@ -631,8 +990,13 @@
   
   
     /* email-signature */
+.signature-section{
+      background: linear-gradient(to top,#02070f,#444f5f);
+    }
+
   .email-signature{
     margin: auto;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     background: #fff;
     font-family: 'Poppins', sans-serif;
