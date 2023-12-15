@@ -990,12 +990,10 @@
   
   
     /* email-signature */
-.signature-section{
-     .signature-section{
+  .signature-section{
       background:url("../img/email-signature.png") no-repeat;
       background-position: center;
       background-size: cover;
-    }
     }
 
   .email-signature{
