@@ -991,7 +991,11 @@
   
     /* email-signature */
 .signature-section{
-      background: linear-gradient(to top,#02070f,#444f5f);
+     .signature-section{
+      background:url("../img/email-signature.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
     }
 
   .email-signature{
