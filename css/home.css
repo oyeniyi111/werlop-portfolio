@@ -3356,7 +3356,7 @@ footer{
   background: linear-gradient(to right,#a50303,#ec0505,#a50303);
   color: white;
   border-radius: 7px;
-  max-width: 500px;
+  max-width: 505px;
   margin: auto;
   margin-bottom: 2rem;
   clip-path: polygon(29% 0, 100% 0, 100% 74%, 85% 87%, 68% 100%, 32% 100%, 0 100%, 0 26%, 14% 14%);
@@ -3446,6 +3446,7 @@ footer{
 
 .secial-grid .special-price .price-strike{
   text-decoration: line-through;
+  margin-left: 5px;
 }
 
 
