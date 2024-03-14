@@ -177,7 +177,7 @@ ion-icon{
 .sidemenu-logo{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   text-align: center;
   color: #fdba04;
   font-weight: bold;
@@ -190,7 +190,7 @@ ion-icon{
 }
 
 .sidemenu-logo img{
-  width: 67px;
+  width: 58px;
   margin: auto;
 }
 
