@@ -190,10 +190,12 @@ ion-icon{
   font-size: 25px;
 } 
 
+
+
 /* large devices */
 @media screen and (max-width: 790px){
   header .headerlogo img{
-   width: 114px;
+   width: 110px;
   }
 
   header{
@@ -209,8 +211,12 @@ ion-icon{
   }
 
   header .headerlogo img{
-    width: 110px;
+    width: 90px;
     
+  }
+
+  header{
+    height: 3.2rem;
   }
   
 
