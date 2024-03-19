@@ -124,34 +124,42 @@
     color: #fff;
     font-size: 25px;
   } 
+
+
   
-  /* large devices */
-  @media screen and (max-width: 790px){
-    header .headerlogo img{
-     width: 114px;
-    }
-  
-    header{
-      height: 4rem;
-    }
+ /* large devices */
+@media screen and (max-width: 790px){
+  header .headerlogo img{
+   width: 110px;
+  }
+
+  header{
+    height: 4rem;
+  }
+}
+
+
+/* small devices */
+@media screen and (max-width: 711px){
+  header nav{
+    display: none;
+  }
+
+  header .headerlogo img{
+    width: 90px;
+    
+  }
+
+  header{
+    height: 3.2rem;
   }
   
-  
-  /* small devices */
-  @media screen and (max-width: 711px){
-    header nav{
-      display: none;
-    }
-  
-    header .headerlogo img{
-      width: 110px; 
-    }
-  
-    .open-slide{
-      display: block;
-      font-size: 30px;
-    }
+
+  .open-slide{
+    display: block;
+    font-size: 30px;
   }
+}
   
   
     
