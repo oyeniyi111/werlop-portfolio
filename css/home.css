@@ -43,14 +43,53 @@
 /* utility */
 .topic{
   color: #8b670c;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
   margin-bottom: 26px;
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+.topic span{
+  display: inline-block;
+  position: relative;
+}
+.topic span:after{
+  content: attr(data-content);
+  color: #ff8b00;
+  opacity: 0;
+  transform: scale(1.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: anim-txt 3s infinite;
+}
+.topic span:nth-child(1):after{ animation-delay: 0.1s; }
+.topic span:nth-child(2):after{ animation-delay: 0.2s; }
+.topic span:nth-child(3):after{ animation-delay: 0.3s; }
+.topic span:nth-child(4):after{ animation-delay: 0.4s; }
+.topic span:nth-child(5):after{ animation-delay: 0.5s; }
+.topic span:nth-child(6):after{ animation-delay: 0.6s; }
+
+@keyframes anim-txt{
+  0%, 75%, 100%{
+      transform: scale(1.5);
+      opacity: 0;
+  }
+  25%, 50%{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 384px){
+  .trainingTopic{ font-size: 35px; }
+}
+
+@media only screen and (max-width: 328px){
+  .trainingTopic{ font-size: 30px; }
 }
 
 
