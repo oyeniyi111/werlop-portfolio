@@ -31,6 +31,71 @@ window.addEventListener("scroll", () => {
 
 
 
+// slider
+  const people = document.querySelectorAll('.personPer');
+  const prevBtn = document.querySelector('#up');
+  const nextBtn = document.querySelector('#down');
+  const autoPlay = true;
+  let autoPlaypersonPer;
+  
+  prevBtn.addEventListener('click', showPrev);
+  nextBtn.addEventListener('click', showNext);
+  
+  function showPrev(){
+      prevpersonPer()
+      //reset autoplay after clicking arrow
+      if(autoPlay){
+          //stop autoplay
+          clearInterval(autoPlaypersonPer)
+          //resume autoplay
+          autoPlaypersonPer = setInterval(nextpersonPer,4000)
+      }
+  }
+  
+  function showNext(){
+      nextpersonPer();
+          //reset autoplay after clicking arrow
+          if(autoPlay){
+              //stop autoplay
+              clearInterval(autoPlaypersonPer)
+              //resume autoplay
+              autoPlaypersonPer = setInterval(nextpersonPer,4000)
+          }
+  }
+  
+  function prevpersonPer(){
+      //select active
+      const activepersonPer = document.querySelector('.show')
+      //remove active
+      activepersonPer.classList.remove('show')
+      if(activepersonPer.previousElementSibling){
+          activepersonPer.previousElementSibling.classList.add('show')
+      } else {
+          // add active class to last personPer
+          people[people.length - 1].classList.add('show')
+      }
+  }
+  
+  function nextpersonPer(){
+      //select active
+      const activepersonPer = document.querySelector('.show')
+      //remove active
+      activepersonPer.classList.remove('show')
+      if(activepersonPer.nextElementSibling){
+          activepersonPer.nextElementSibling.classList.add('show')
+      } else {
+          people[0].classList.add('show')
+      }
+  }
+  
+  // create auto play sliderSlide
+  if(autoPlay){
+      autoPlaypersonPer = setInterval(nextpersonPer, 4000)
+  }
+
+
+
+
 // skills-tab
 const tabs = document.querySelectorAll('[data-target]'),
 tabContent = document.querySelectorAll('[data-content]')
