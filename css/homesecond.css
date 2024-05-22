@@ -1053,13 +1053,12 @@ footer{
     padding: 10px;
   }
 
+.aboutmearea .hi{
+    margin-bottom: 15px;
+  }
+
   .aboutmearea .span{
     color: #ff8b00;
-  }
-  
-  .aboutmearea .hi{
-    margin-top: 10px;
-    margin-bottom: 5px;
   }
 
   
