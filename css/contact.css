@@ -849,6 +849,10 @@
     }
 
     @media screen and (max-width:1099px){
+    .note-main-head p{
+      font-size: small;
+      }
+        
       .home-note{
         gap: 10px;
       }
